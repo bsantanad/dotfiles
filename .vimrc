@@ -25,8 +25,6 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 " statusbar
 set laststatus=2
 set statusline=
-set statusline+=%#StatusLine#
-set statusline+=%#VisualNOS#
 set statusline+=%#PmenuSel#
 set statusline+=\ %f
 set statusline+=\ %m
