@@ -34,6 +34,16 @@ set statusline+=\ %y
 set statusline+=\ %p%%
 set statusline+=\ 
 
+" NO PLUGINS: (https://github.com/changemewtf/no_plugins)
+set nocompatible
+filetype plugin on
+
+" finding files:
+set path+=**
+set wildmenu
+
+command! MakeTags !ctags -R .
+
 " use different colo scheme for perl files
 let ext = expand('%:e')
 if ext == "pl"
