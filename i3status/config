@@ -13,14 +13,20 @@ general {
 
 order += "cpu_usage"
 #order += "cpu_temperature 0"
+order += "ethernet eth0"
 order += "wireless wlo1"
 order += "battery 0"
 order += "memory"
 order += "tztime local"
 
 wireless wlo1 {
-        format_up = "wifi: (%quality at %essid, %bitrate) %ip"
-        format_down = "wifi: down"
+        format_up = "wlan: %ip -%quality"
+        format_down = "wlan: down"
+}
+
+ethernet eth0 {
+        format_up = "lan: %ip (%speed)"
+        format_down = "lan: down"
 }
 
 cpu_usage {
