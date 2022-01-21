@@ -33,5 +33,5 @@ else
 fi
 
 exec xrandr --output eDP-1-1 --primary --auto --output HDMI-0 --auto --right-of eDP-1-1
-exec feh --bg-scale /home/bsantanad/downloads/bk.png
+exec feh --bg-fill $HOME/downloads/big_dune.jpg
 
